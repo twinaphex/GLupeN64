@@ -131,7 +131,7 @@ private:
 		i4Uniform uBlendMux1, uBlendMux2;
 	};
 
-#ifdef OS_MAC_OS_X
+#if defined(OS_MAC_OS_X) && !defined(__LIBRETRO__)
 #define glUniform1i glUniform1iARB
 #define glUniform1f glUniform1fARB
 #define glUniform2f glUniform2fARB
